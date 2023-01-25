@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SCROLLSPY</title>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="./assets/css/style.css">
+
+</head>
+
+<body>
+    <!-- Header -->
+    <header >
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">
+
+                <a href="/" class="navbar-brand">
+                    <img src="https://getbootstrap.com//docs/5.2/assets/brand/bootstrap-logo.svg" alt="bootstrap" width="30" height="30" class="d-inline-block align-top">
+                    BOOTSTRAP LEARNING</a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#myNavBar"
+                    aria-controls="myNavBar" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="myNavBar">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a href="#homesection" class="nav-link active">HOME</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#aboutsection" class="nav-link">ABOUT</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a  href="#coursesection" class="nav-link">COURSES</a>
+                          </li>
+                       <li class="nav-item">
+                            <a href="#contactsection" class="nav-link ">CONTACT</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- End Header -->
+
+    <!--                                                          scrollspy
+
+                       Automatically update Bootstrap navigation or list group components based on scroll position to indicate which link is currently active in the viewport. -->
+    
+    <!-- main  -->
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-md-4">
+              <ul class="list-group" id="myList">
+                <a href="#intro" class="list-group-item list-group-item-action ">INTRODUCTION TO BOOTSTARAP</a>
+                <a href="#grids" class="list-group-item list-group-item-action">BOOTSTARAP GRIDS</a>
+                <a href="#components" class="list-group-item list-group-item-action">BOOTSTARAP COMPONENTS</a>
+                <a href="#utilities" class="list-group-item list-group-item-action">BOOTSTARAP UTILITIES</a>
+                <a href="#next" class="list-group-item list-group-item-action">WHAT'S TO LEARN NEXT</a>
+              </ul>
+            </div>
+            <div class="col-md-8" style="height:500px; overflow-y: scroll;" data-bs-spy="scroll" data-bs-target="#myList" tabindex="0" data-bs-offset="0">
+             <div>
+                <h4 id="intro">INTRODUCTION TO BOOTSTARAP</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, facilis veniam. Eum eligendi perspiciatis, expedita possimus illo eveniet, ullam laboriosam doloremque illum, harum atque magni nobis sequi cumque minus aperiam.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, facilis veniam. Eum eligendi perspiciatis, expedita possimus illo eveniet, ullam laboriosam doloremque illum, harum atque magni nobis sequi cumque minus aperiam.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, facilis veniam. Eum eligendi perspiciatis, expedita possimus illo eveniet, ullam laboriosam doloremque illum, harum atque magni nobis sequi cumque minus aperiam.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, facilis veniam. Eum eligendi perspiciatis, expedita possimus illo eveniet, ullam laboriosam doloremque illum, harum atque magni nobis sequi cumque minus aperiam.</p>
+             </div>
+             <div>
+                <h4 id="grids">BOOTSTARAP GRIDS</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, facilis veniam. Eum eligendi perspiciatis, expedita possimus illo eveniet, ullam laboriosam doloremque illum, harum atque magni nobis sequi cumque minus aperiam.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, facilis veniam. Eum eligendi perspiciatis, expedita possimus illo eveniet, ullam laboriosam doloremque illum, harum atque magni nobis sequi cumque minus aperiam.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, facilis veniam. Eum eligendi perspiciatis, expedita possimus illo eveniet, ullam laboriosam doloremque illum, harum atque magni nobis sequi cumque minus aperiam.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, facilis veniam. Eum eligendi perspiciatis, expedita possimus illo eveniet, ullam laboriosam doloremque illum, harum atque magni nobis sequi cumque minus aperiam.</p>
+             </div>
+             <div>
+                <h4 id="components">BOOTSTARAP COMPONENTS</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, facilis veniam. Eum eligendi perspiciatis, expedita possimus illo eveniet, ullam laboriosam doloremque illum, harum atque magni nobis sequi cumque minus aperiam.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, facilis veniam. Eum eligendi perspiciatis, expedita possimus illo eveniet, ullam laboriosam doloremque illum, harum atque magni nobis sequi cumque minus aperiam.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, facilis veniam. Eum eligendi perspiciatis, expedita possimus illo eveniet, ullam laboriosam doloremque illum, harum atque magni nobis sequi cumque minus aperiam.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, facilis veniam. Eum eligendi perspiciatis, expedita possimus illo eveniet, ullam laboriosam doloremque illum, harum atque magni nobis sequi cumque minus aperiam.</p>
+             </div>
+             <div>
+                <h4 id="utilities">BOOTSTARAP UTILITIES</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, facilis veniam. Eum eligendi perspiciatis, expedita possimus illo eveniet, ullam laboriosam doloremque illum, harum atque magni nobis sequi cumque minus aperiam.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, facilis veniam. Eum eligendi perspiciatis, expedita possimus illo eveniet, ullam laboriosam doloremque illum, harum atque magni nobis sequi cumque minus aperiam.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, facilis veniam. Eum eligendi perspiciatis, expedita possimus illo eveniet, ullam laboriosam doloremque illum, harum atque magni nobis sequi cumque minus aperiam.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, facilis veniam. Eum eligendi perspiciatis, expedita possimus illo eveniet, ullam laboriosam doloremque illum, harum atque magni nobis sequi cumque minus aperiam.</p>
+             </div>
+             <div>
+                <h4 id="next">WHAT'S TO LEARN NEXT</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, facilis veniam. Eum eligendi perspiciatis, expedita possimus illo eveniet, ullam laboriosam doloremque illum, harum atque magni nobis sequi cumque minus aperiam.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, facilis veniam. Eum eligendi perspiciatis, expedita possimus illo eveniet, ullam laboriosam doloremque illum, harum atque magni nobis sequi cumque minus aperiam.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, facilis veniam. Eum eligendi perspiciatis, expedita possimus illo eveniet, ullam laboriosam doloremque illum, harum atque magni nobis sequi cumque minus aperiam.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, facilis veniam. Eum eligendi perspiciatis, expedita possimus illo eveniet, ullam laboriosam doloremque illum, harum atque magni nobis sequi cumque minus aperiam.</p>
+             </div>
+            </div>
+        </div>
+    </div>
+    <!-- end main  -->
+    <!-- Bootstrap JS -->
+    <script src="./assets/js/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js" integrity="sha512-2rNj2KJ+D8s1ceNasTIex6z4HWyOnEYLVC3FigGOmyQCZc2eBXKgOxQmo3oKLHyfcj53uz4QMsRCWNbLd32Q1g==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    </script>
+    <script src="./assets/js/bootstrap.min.js"></script>
+    <script>const scrollSpy = new bootstrap.ScrollSpy(document.body, {
+        target: '#myList'
+      })</script>
+</body>
+
+</html>

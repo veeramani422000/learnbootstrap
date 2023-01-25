@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SCROLLSPY</title>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="./assets/css/style.css">
+
+</head>
+
+<body data-bs-spy="scroll" data-bs-target="#myScrollspy" data-bs-root-margin="0px 0px -40%" data-bs-smooth-scroll="true" class="scrollspy-example" tabindex="0">
+    <!-- Header -->
+    <header class="sticky-top">
+        <nav id="myScrollspy" class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
+            <div class="container">
+
+                <a href="/" class="navbar-brand">
+                    <img src="https://getbootstrap.com//docs/5.2/assets/brand/bootstrap-logo.svg" alt="bootstrap" width="30" height="30" class="d-inline-block align-top">
+                    BOOTSTRAP LEARNING</a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#myNavBar"
+                    aria-controls="myNavBar" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="myNavBar">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a href="#homesection" class="nav-link active">HOME</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#aboutsection" class="nav-link">ABOUT</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a  href="#coursesection" class="nav-link">COURSES</a>
+                          </li>
+                        <li class="nav-item">
+                            <a href="#contactsection" class="nav-link ">CONTACT</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- End Header -->
+
+    <!--                                                          scrollspy
+
+                       Automatically update Bootstrap navigation or list group components based on scroll position to indicate which link is currently active in the viewport. -->
+    <main class="">
+        <!-- home section-->
+        <section class="bg-info p-5 text-center" id="homesection" style="height:400px;">
+           <h4>HOME CONTENT</h4>
+           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum, cum soluta. Modi, minus eos numquam deleniti omnis, quas facere necessitatibus sint incidunt similique praesentium iste impedit, accusamus cupiditate aperiam labore.
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestiae modi quisquam ipsam vitae perferendis? Architecto beatae asperiores sit rem, iure ipsa, officia dolorum nesciunt, ea eligendi aut ducimus sed nemo!
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore, suscipit! Quae pariatur ipsam autem, expedita ducimus aliquam adipisci odit ea ut, consectetur nisi vitae dolorem! Cumque aliquam ad pariatur beatae.
+           </p>
+           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste itaque dolorem perferendis officiis eveniet unde quidem consequatur repudiandae consequuntur aliquam, quo earum modi. Sapiente eius at corrupti perferendis. Praesentium, ratione.</p>
+        </section>
+        <!--end section-->
+
+                <!-- about section-->
+                <section class="bg-warning p-5 text-center" id="aboutsection" style="height:400px;">
+                    <h4>ABOUT CONTENT</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum, cum soluta. Modi, minus eos numquam deleniti omnis, quas facere necessitatibus sint incidunt similique praesentium iste impedit, accusamus cupiditate aperiam labore.
+                     Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestiae modi quisquam ipsam vitae perferendis? Architecto beatae asperiores sit rem, iure ipsa, officia dolorum nesciunt, ea eligendi aut ducimus sed nemo!
+                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore, suscipit! Quae pariatur ipsam autem, expedita ducimus aliquam adipisci odit ea ut, consectetur nisi vitae dolorem! Cumque aliquam ad pariatur beatae.
+                    </p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste itaque dolorem perferendis officiis eveniet unde quidem consequatur repudiandae consequuntur aliquam, quo earum modi. Sapiente eius at corrupti perferendis. Praesentium, ratione.</p>
+                 </section>
+                 <!--end section-->
+
+                         <!-- courses section-->
+        <section class="bg-dark text-white p-5 text-center" id="coursesection" style="height:400px;">
+            <h4>COURSES CONTENT</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum, cum soluta. Modi, minus eos numquam deleniti omnis, quas facere necessitatibus sint incidunt similique praesentium iste impedit, accusamus cupiditate aperiam labore.
+             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestiae modi quisquam ipsam vitae perferendis? Architecto beatae asperiores sit rem, iure ipsa, officia dolorum nesciunt, ea eligendi aut ducimus sed nemo!
+             Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore, suscipit! Quae pariatur ipsam autem, expedita ducimus aliquam adipisci odit ea ut, consectetur nisi vitae dolorem! Cumque aliquam ad pariatur beatae.
+            </p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste itaque dolorem perferendis officiis eveniet unde quidem consequatur repudiandae consequuntur aliquam, quo earum modi. Sapiente eius at corrupti perferendis. Praesentium, ratione.</p>
+         </section>
+         <!--end section-->
+
+                                  <!-- contact section-->
+        <section class="bg-light p-5 text-center" style="height:400px;" id="contactsection">
+            <h4>CONTACT CONTENT</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum, cum soluta. Modi, minus eos numquam deleniti omnis, quas facere necessitatibus sint incidunt similique praesentium iste impedit, accusamus cupiditate aperiam labore.
+             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestiae modi quisquam ipsam vitae perferendis? Architecto beatae asperiores sit rem, iure ipsa, officia dolorum nesciunt, ea eligendi aut ducimus sed nemo!
+             Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore, suscipit! Quae pariatur ipsam autem, expedita ducimus aliquam adipisci odit ea ut, consectetur nisi vitae dolorem! Cumque aliquam ad pariatur beatae.
+            </p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste itaque dolorem perferendis officiis eveniet unde quidem consequatur repudiandae consequuntur aliquam, quo earum modi. Sapiente eius at corrupti perferendis. Praesentium, ratione.</p>
+         </section>
+         <!--end section-->
+         <footer class="py-3 bg-success text-center">
+            <h4>COPYRIGHTING &copy; - BOOTSTRAP LEARNING</h4>
+         </footer>
+    </main>
+
+
+    <!-- Bootstrap JS -->
+    <script src="./assets/js/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js" integrity="sha512-2rNj2KJ+D8s1ceNasTIex6z4HWyOnEYLVC3FigGOmyQCZc2eBXKgOxQmo3oKLHyfcj53uz4QMsRCWNbLd32Q1g==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    </script>
+    <script src="./assets/js/bootstrap.min.js"></script>
+    <script>const scrollSpy = new bootstrap.ScrollSpy(document.body, {
+        target: '#myScrollspy'
+      })</script>
+</body>
+
+</html>

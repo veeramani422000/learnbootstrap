@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CONTACT US</title>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="./assets/css/style.css">
+
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">
+
+                <a href="/" class="navbar-brand">
+                    <img src="https://getbootstrap.com//docs/5.2/assets/brand/bootstrap-logo.svg" alt="bootstrap" width="30" height="30" class="d-inline-block align-top">
+                    BOOTSTARAP LEARNING</a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#myNavBar"
+                    aria-controls="myNavBar" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="myNavBar">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item active">
+                            <a href="index.html" class="nav-link">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="about.html" class="nav-link">About</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                              HELP
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                              <li><a class="dropdown-item" href="https://facebook.com/">FACEBOOK</a></li>
+                              <li><a class="dropdown-item" href="https://youtube.com/">YOUTUBE</a></li>
+                              <li><hr class="dropdown-divider"></li>
+                              <li><a class="dropdown-item" href="https://instragram.com/">INSTAGRAM</a></li>
+                            </ul>
+                          </li>
+                        <li class="nav-item">
+                            <a href="/blog.html" class="nav-link">Blog</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="/contact.html" class="nav-link active">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+<div class="container mt-5 mb-5">
+    <h1 class="text-center bg-secondary img-thumbnail">FORMS</h1>
+  <div class="row">
+    <div class="col-sm-8">
+      <iframe class="w-100 h-100" id="gmap_canvas" src="https://maps.google.com/maps?q=virudhunagar&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+    </div>
+    <div class="col-sm-4">
+      <div class="card">
+      <div class="card-header text-center">CONTACT US</div>
+      <div class="card-body">
+    <form action="" method="post">
+      <div class="mb-3">
+      <label for="name" class="form-label">FULL NAME <span class="text-warning">*</span></label>
+      <input type="text" class="form-control" id="name" name="name" placeholder="Enter Your Full Name">
+      </div>
+      <div class="mb-3">
+        <label for="gender">GENDER:</label>
+        <div class="me-2 form-check form-check-inline">
+          <input
+            class="form-check-input"
+            type="radio"
+            name="gender"
+            value="Male"
+            id="gender"
+            required
+          />
+          <label class="form-check-label" for="gender">Male</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input
+            class="form-check-input"
+            type="radio"
+            name="gender"
+            id="female"
+            value="Female"
+          />
+          <label class="form-check-label" for="female">Female</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input
+            class="form-check-input"
+            type="radio"
+            name="gender"
+            id="others"
+            value="Others"
+          />
+          <label class="form-check-label" for="others">Others</label>
+        </div>
+      </div>
+      <div class="mb-3">
+      <label for="phone" class="form-label">MOBILE NO <span class="text-muted">(optional)</span></label>
+      <input type="number" class="form-control" id="name"  placeholder="+919080651949">
+      </div>
+      <div class="mb-3">
+      <label for="email" class="form-label">Email <span class="text-warning">*</span></label>
+      <input type="email" class="form-control" id="email" name="email" placeholder="you@gmail.com" aria-describedby="emailhelp" required>
+      <small id="emailhelp">We'll never share your email with anyone else.</small>
+      </div>
+      <div class="mb-3">
+        <label for="source" class="form-label">Came From</label>
+        <select name="source" id="source" class="form-control">
+          <option value="">--Select Source</option>
+          <option value="google">GOOGLE</option>
+          <option value="facebook">FACEBOOK</option>
+          <option value="youtube">YOUTUBE</option>
+        </select>
+        </div>
+        <div class="mb-3">
+          <label for="messages" class="form-label">MESSAGE</label>
+          <textarea  class="form-control"  rows="3" id="messages" name="messages" placeholder="Some Text Here..!">
+          </textarea>
+          </div>
+          <div class="mb-3">
+            <div class="from-check text-center">
+              <input type="chechbox" name="agreement" id="agreement"  class="form-check-input">
+              <label for="agreement" class="form-check-label">I agree to terms and connditions</label>
+            </div>
+          </div>
+      <div class="mb-3">
+        <div class="d-grid gap-2">
+        <button class="btn btn-primary " type="submit">SUBMIT</button>
+      </div>
+      </div>
+    </form>
+    </div>
+    </div>
+    </div>
+  </div>    
+  </div>  
+
+
+  <!-- Bootstrap JS -->
+  <script src="./assets/js/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js" integrity="sha512-2rNj2KJ+D8s1ceNasTIex6z4HWyOnEYLVC3FigGOmyQCZc2eBXKgOxQmo3oKLHyfcj53uz4QMsRCWNbLd32Q1g==" crossorigin="anonymous" referrerpolicy="no-referrer">
+  </script>
+  <script src="./assets/js/bootstrap.min.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,1335 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>LEARN BOOTSTRAP</title>
+<link rel="stylesheet" href="./assets/css/bootstrap-reboot.min.css">
+<link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+<link rel="stylesheet" href="./assets/css/style.css">
+   <!--                                               Online Bootstrap CSS Link
+
+       <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">-->
+
+  </head>
+  <body>
+  <!--                                                     REBOOT
+
+                     Reboot builds upon Normalize, providing many HTML elements with somewhat opinionated styles using only element selectors. Additional styling is done only with classes-->  
+
+    <div class="reboot">
+  <h1 class="text-center bg-secondary img-thumbnail">REBOOT</h1>
+    <h1>welcome to Hello, world!</h1>
+    <p>Let start Learn Bootstrap...!</p>
+    </div>
+    <!--                                                DEFAULT CONTAINER 
+
+               Our default .container class is a responsive, fixed-width container, meaning its max-width changes at each breakpoint.   -->
+
+    <div class="default-container bg-secondary img-thumbnail">
+    <h1 style="text-align:center;">DEFAULT CONTAINER</h1>
+    </div>        
+    <!--                                               RESPONSIVE CONTAINER
+
+           Responsive containers allow you to specify a class that is 100% wide until the specified breakpoint is reached,
+           after which we apply max-widths for each of the higher breakpoints-->
+    <div class="responsive-container bg-primary">
+    <div class="container-sm">100% wide until small breakpoint</div>
+    <div class="container-md">100% wide until medium breakpoint</div>
+    <div class="container-lg">100% wide until large breakpoint</div>
+    <div class="container-xl">100% wide until extra large breakpoint</div>
+    <div class="container-xxl">100% wide until extra extra large breakpoint</div><br>
+    </div>
+    
+   <!--                                                     FLUID CONTAINER
+
+                          Use .container-fluid for a full width container, spanning the entire width of the viewport.  -->  
+
+    <div class="container-fluid ">
+    <h1 style="text-align:center;">FLUID CONTAINER</h1>
+    </div>  <br>
+    <!--                                                         GRID
+
+                Use our powerful mobile-first flexbox grid to build layouts of all shapes and sizes thanks to a twelve column system,
+                six default responsive tiers   
+                Bootstrap’s grid system uses a series of containers, rows, and columns to layout and align content.
+                It’s built with flexbox and is fully responsive.           
+                                                            1.Auto-layout columns 
+                 Utilize breakpoint-specific column classes for easy column sizing without an explicit numbered class like .col-sm-6. -->       
+     <div class="container color-1 height-500">
+       <h1 class="text-center bg-secondary img-thumbnail">GRIDS</h1>
+       <p>LEARN BASIC LAYOUTS</p>
+    <!-- Layout -->
+    <div class="grid-container container">
+     <!--  Row  -->
+     <!--  12 column grid  -->
+     <div class="row">
+<div class="col bg">Row 1 Col 1</div>
+<div class="col bg">Row 1 Col 2</div>
+<div class="col bg">Row 1 Col 3</div>
+<div class="col bg">Row 1 Col 4</div>
+     </div>
+     <div class="row">
+      <div class="col-2 bg">Row 1 Col 1</div>
+      <div class="col bg">Row 1 Col 2</div>
+      <div class="col bg">Row 1 Col 3</div>
+      <div class="col-2 bg">Row 1 Col 4</div>
+     </div>
+     <div class="row">
+      <div class="col-4 bg">Col-4</div>
+      <div class="col-4 bg">Col-4</div>
+      <div class="col-4 bg">Col-4</div>
+     </div>
+     <div class="row">
+<!--
+xs <576px	
+sm ≥576px
+md ≥768px
+lg ≥992px
+xl ≥1200px	
+xxl ≥1400px
+Container max-width	None (auto)	540px	720px	960px	1140px	1320px
+Class prefix	.col-	.col-sm-	.col-md-	.col-lg-	.col-xl-	.col-xxl- -->  
+      <div class="col-sm-2 bg">Row 1 Col 1</div>
+      <div class="col-sm bg">Row 1 Col 2</div>
+      <div class="col-sm bg">Row 1 Col 3</div>
+      <div class="col-sm bg">Row 1 Col 4</div>
+    </div>
+    <!-- End Layout -->
+    </div> 
+    <br>
+    <div class="container text-center">
+      <div class="row">
+        <div class="col-sm bg">
+          [LOGO]
+        </div>
+        <div class="col-sm bg">
+          <ol class="list-unstyled">
+            <li>HOME</li>
+            <li>ABOUT</li>
+            <li>CONTACT</li>
+          </ol>
+        </div>
+        <div class="col-sm bg">
+          <button class="bg-info img-thumbnail">LOGIN NOW</button>
+        </div>
+      </div>
+      <div class="row " style="height:200px;">
+        <div class="col-sm-2 bg">
+           LEFT SIDEBAR
+        </div>
+        <div class="col-sm bg">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores odit ad molestias consequatur sed fugit similique, assumenda repudiandae pariatur ullam rem sunt at doloribus vitae dolorum rerum quo? Earum, corrupti!
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm bg">
+          FOOTER INFORMATION
+        </div>
+      </div>
+    </div><br> 
+    </div>      
+    <!--                                                      TYPOGRAPHY 
+
+          Documentation and examples for Bootstrap typography, including global settings, headings, body text, lists, and more. 
+                                                              1.HEADINGS(Customizing headings)
+                                           All HTML headings, <h1> through <h6>, are available. 
+                                                              2.DISPLAY
+                              Traditional heading elements are designed to work best in the meat of your page content. 
+                              When you need a heading to stand out, consider using a display heading—a larger, 
+                              slightly more opinionated heading style.
+                                                               3.LEAD
+                                            Make a paragraph stand out by adding .lead.
+                                                               4.LISTS(Unstyled )                                              
+                       Remove the default list-style and left margin on list items (immediate children only)
+                                                              (inline)
+                        Remove a list’s bullets and apply some light margin with a combination of two classes,
+                        .list-inline and .list-inline-item.
+                                                               5.BLOCKQUOTE
+                             For quoting blocks of content from another source within your document. 
+                               Wrap <blockquote class="blockquote"> around any HTML as the quote.            -->
+
+    <h1 class="text-center bg-secondary img-thumbnail">TYPOGRAPHY</h1>                             
+    <div class="typography">                                        
+    <h1 class="display-3">WELCOME TO MY HOME</h1>
+    <h1 class="h4">DOOR OPEN (04.02.2025)</h1>
+    <p class="lead">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illo reiciendis accusantium laboriosam perferendis, placeat corporis soluta similique provident libero debitis velit corrupti tempora quam repudiandae cumque autem voluptatum voluptatem. Aut!</p>
+    </div>
+    <ul class="list-unstyled px-5">
+      <li>LIST 1</li>
+      <li>LIST 2</li>
+      <li>LIST 3</li>
+      <li>LIST 4</li>
+      <li>LIST 5</li>
+    </ul>
+    <ul class="list-inline px-5 bg-dark text-light" >
+      <li class="list-inline-item">HOME</li>
+      <li class="list-inline-item">ABOUT</li>
+      <li class="list-inline-item">CONTACT</li>
+    </ul>
+    <h1 class="display-6 px-5"> A.P.J QUOTE</h1>
+    <blockquote class="blockquote text-center">
+      <p>Look at the sky. We are not alone. The whole universe is friendly to us and conspires only to give the best to those who dream and work.</p>
+      <FOoter class="blockquote-footer">
+        A. P. J. Abdul Kalam
+      </FOoter>
+    </blockquote>
+                                                            
+    <!--                                                      COLORS
+
+                            We use a subset of all colors to create a smaller color palette for generating color schemes
+                                                       $theme-colors: (
+                                                          "primary":    $primary,
+                                                          "secondary":  $secondary,
+                                                          "success":    $success,
+                                                          "info":       $info,
+                                                          "warning":    $warning,
+                                                          "danger":     $danger,
+                                                          "light":      $light,
+                                                          "dark":       $dark
+                                                          );                       -->
+
+  <div class=color>
+  <h1 class="text-center bg-secondary img-thumbnail">COLORS</h1>
+  <p class="text-primary">This text  is primary color</p>
+  <p class="text-secondary">This text  is secondary color</p>
+  <p class="text-success">This text  is success color</p>
+  <p class="text-info">This text  is info color</p>
+  <p class="text-warning">This text  is warning color</p>
+  <p class="text-danger">This text  is danger color</p>
+  <p class="text-light">This text  is light color</p>
+  <p class="text-dark">This text  is dark color</p>
+  </div><br>
+  <div class="bg-color text-center">
+  <button class="bg-success img-thumbnail">success</button>
+  <button class="bg-warning img-thumbnail">warning</button>
+  <button class="bg-danger img-thumbnail">danger</button>
+  </div><br>
+  <!--                                                    IMAGES
+
+                                                    1.RESPONSIVE IMAGES  
+
+                            Images in Bootstrap are made responsive with .img-fluid. 
+                            This applies max-width: 100%; and height: auto; 
+                            To the image so that it scales with the parent width.  --> 
+
+    <h1 class="text-center bg-secondary img-thumbnail">RESPONSIVE IMAGES</h1>
+    <img src="https://cdn.lynda.com/course/372539/372539-636439388923078176-16x9.jpg" alt="Responsive" class="img-fluid rounded"> <br><hr>
+
+    <!--                                             2.IMAGE THUMBNAILS 
+
+                                        In addition to our border-radius utilities, 
+                                        you can use .img-thumbnail to give an image a rounded 1px border appearance   
+                                      
+                                                     3.ALIGNING IMAGES
+
+                                    Align images with the helper float classes or text alignment classes.
+                                    block-level images can be centered using the .mx-auto margin utility class.   -->
+
+    <h2 style="text-align:center;">ALIGNING IMAGES</h2>                                
+    <img src="https://www.sarthaks.com/assets/images/hero-flex.png" alt="learing" width="300px" class="img-thumbnail mx-auto d-block">
+    <img src="https://saotg.com/wp-content/uploads/2021/12/SAOTG-services-1.png" alt="student learing" width="300px" class="img-thumbnail float-start"> 
+<!--                                                        TABLE
+
+                        Using the most basic table markup, here’s how .table-based tables look in Bootstrap.   
+                                                           1.Bordered tables
+                                         Add .table-bordered for borders on all sides of the table and cells.
+                                                           2.Hoverable rows 
+                                    Add .table-hover to enable a hover state on table rows within a <tbody>.  
+                                                           3.Always responsive
+                              Across every breakpoint, use .table-responsive for horizontally scrolling tables.   -->
+<div class="table">
+  <h1 class="text-center bg-secondary img-thumbnail">TABLE</h1>                        
+<table class="table table-bordered text-center table-hover ">
+  <thead class="table-dark">
+<tr>
+  <th>#ID</th>
+  <th>NAME</th>
+  <th>COUSE</th>
+</tr>
+  </thead>
+  <tbody>
+<tr>
+  <td>1</td>
+  <td>Ajith</td>
+  <td>HTML5</td>
+</tr>
+  </tbody>
+      <tbody>
+    <tr>
+      <td>2</td>
+      <td>Dhanush</td>
+      <td>CSS3</td>
+    </tr>
+      </tbody>
+          <tbody>
+        <tr>
+          <td>3</td>
+          <td>Ganesh</td>
+          <td>JS</td>
+        </tr>
+          </tbody>
+</table>
+</div>
+<!--                                                                 NAVBAR  
+
+                         Documentation and examples for Bootstrap’s powerful, responsive navigation header, the navbar. 
+                         Includes support for branding, navigation, and more, including support for our collapse plugin.
+                                                            1..navbar-brand 
+                                               (for your company, product, or project name)
+                                                            2..collapse.navbar-collapse 
+                                    (for grouping and hiding navbar contents by a parent breakpoint.)
+                                                            3..navbar-nav
+                                   (for a full-height and lightweight navigation (including support for dropdowns). 
+                                                            4..navbar-toggler 
+                                  (for use with our collapse plugin and other navigation toggling behaviors.)
+                                                            5.navbar with .navbar-expand{-sm|-md|-lg|-xl|-xxl} 
+                                     Navbars require a wrapping(for responsive collapsing and color scheme classes) -->
+<header>
+  <h1 class="text-center bg-secondary img-thumbnail">NAVBAR</h1> 
+  <nav class="navbar navbar-expand-lg navbar-light bg-info">
+    <div class="container ">
+
+<a href="#" class="navbar-brand"> <img src="https://getbootstrap.com//docs/5.2/assets/brand/bootstrap-logo.svg" alt="bootstrap" width="30" height="30" class="d-inline-block align-top">
+BOOTSTARAP LEARNING</a>
+
+<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#myNavBar"
+aria-controls="myNavBar" aria-expanded="false" aria-label="Toggle navigation">
+<span class="navbar-toggler-icon"></span>
+</button>
+
+<div id="myNavBar" class="collapse navbar-collapse">
+  <ul class="navbar-nav ms-auto ">
+    <li class="nav-item">
+      <a href="index.html" class="nav-link active">HOME</a>
+    </li>
+    <li class="nav-item">
+      <a href="about.html" class="nav-link">ABOUT</a>
+    </li> 
+    <li class="nav-item dropdown">
+      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+        HELP
+      </a>
+      <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+        <li><a class="dropdown-item" href="#">FACEBOOK</a></li>
+        <li><a class="dropdown-item" href="#">YOUTUBE</a></li>
+        <li><hr class="dropdown-divider"></li>
+        <li><a class="dropdown-item" href="#">INSTAGRAM</a></li>
+      </ul>
+    </li>
+    <li class="nav-item">
+      <a href="/blog.html" class="nav-link">BLOG</a>
+    </li>
+    <li class="nav-item">
+      <a href="scrollspy-nav.html" class="nav-link">SCROLLSPY-NAV</a>
+    </li>
+    <li class="nav-item">
+      <a href="scrollspy-list.html" class="nav-link">SCROLLSPY-LIST</a>
+    </li>
+    <li class="nav-item">
+      <a href="contact.html" class="nav-link">CONTACT</a>
+    </li>
+  </ul>
+</div>
+</div>
+</nav>
+</header>
+<br>                                             
+<!--                                                               JUMBOTRON  
+
+                                    Dropped the jumbotron component as it can be replicated with utilities.     -->
+
+<div class="jumbotron ">
+  <div class="container bg-light">
+    <h1 class="text-center bg-secondary img-thumbnail">ALERTS</h1> 
+    <!--                                                             ALERTS  
+
+               Provide contextual feedback messages for typical user actions with the handful of available and flexible alert messages.  
+                                                            1. .alert-success
+                                  (For proper styling, use one of the eight required contextual classes)
+                                                            2..alert-dismissible
+      Add a close button and the .alert-dismissible class, which adds extra padding to the right of the alert and positions the close button. 
+                                                            3..fade.show
+                             To animate alerts when dismissing them, be sure to add the .fade and .show classes.  -->
+
+    <div class="alert alert-danger alert-dismissible fade show" role="alert">
+     <strong>ALERTS...!</strong> We have disabled the rigister functinonalities for now !
+      <a href="#" class="alert-link">Learn More</a>
+      <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+    </div>  
+    <h1 class="text-center bg-secondary img-thumbnail">JUMBOTRON</h1> 
+    <h1 class="display-4"><i class="bi bi-card-checklist"></i> Hello JUMBOTRON There! </h1>
+
+    <!--                                                               BADGES
+
+                                      Documentation and examples for badges, our small count and labeling component.
+                                                                   1..rounded-pill
+                              Use the .rounded-pill utility class to make badges more rounded with a larger border-radius.  -->
+
+    <p class="lead">welcome to BOOTSTARAP Learning <span class="badge bg-info rounded-pill">2022</span>...!</p>
+    <h1 class="text-center bg-secondary img-thumbnail">BADGES</h1> 
+    <button type="button" class="btn btn-primary position-relative">
+      MESSAGES
+      <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+        99+
+        <span class="visually-hidden">unread messages</span>
+      </span>
+    </button>
+    <hr class="mt-5">
+    <p> Before Learing BOOTSTRAP,Learn The HTML,CSS,JAVASCRIPT...!</p>
+    <button class="btn btn-primary"><i class="bi bi-arrow-right-circle-fill "></i> Getting Started!</button>
+    <button class="btn btn-outline-success">Total videos: <span class="badge text-bg-success"> 50 </span></button><hr>
+
+    <!--                                                              BUTTON
+
+        Use Bootstrap’s custom button styles for actions in forms, dialogs, and more with support for multiple sizes, states, and more. 
+                                                               1. .btn
+                                     The .btn classes are designed to be used with the <button> element     
+                                                               2..btn-outline-
+                                     ones to remove all background images and colors on any button. 
+                                                               3. .btn-lg, .btn-sm 
+                                     Fancy larger or smaller buttons? Add .btn-lg or .btn-sm for additional sizes.
+
+   -->
+<h1 class="bg-secondary img-thumbnail text-center">BUTTONS</h1>
+<button class="btn btn-primary">PTIMARY</button> 
+<button type="button" class="btn btn-secondary">Secondary</button>
+<button type="button" class="btn btn-success">Success</button>
+<button type="button" class="btn btn-danger">Danger</button>
+<button type="button" class="btn btn-warning">Warning</button>
+<button type="button" class="btn btn-info">Info</button>
+<button type="button" class="btn btn-light">Light</button>
+<button type="button" class="btn btn-dark">Dark</button>
+<button type="button" class="btn btn-link">Link</button>
+<hr>
+<button type="button" class="btn btn-outline-primary ">Primary</button>
+<button type="button" class="btn btn-outline-secondary">Secondary</button>
+<button type="button" class="btn btn-outline-success">Success</button>
+<button type="button" class="btn btn-outline-danger">Danger</button>
+<button type="button" class="btn btn-outline-warning">Warning</button>
+<button type="button" class="btn btn-outline-info">Info</button>
+<button type="button" class="btn btn-outline-light">Light</button>
+<button type="button" class="btn btn-outline-dark">Dark</button> 
+<button type="button" class="btn btn-outline-link">Link</button>
+<hr>
+<button type="button" class="btn btn-primary btn-lg active">Large button</button>
+<button type="button" class="btn btn-primary btn-sm">Small button</button>
+<hr>
+<div class="d-grid gap-2">
+  <button class="btn btn-primary disabled" type="button">proceed to next page</button>
+  <button class="btn btn-primary" type="button">proceed to next page</button>
+</div>  <BR></BR>
+<!--                                                     GROUP BUTTONS
+
+                                                         1..btn-group.
+                                      (Wrap a series of buttons with .btn in .btn-group.)    -->
+<h1 class="text-center bg-secondary img-thumbnail">GROUP BUTTONS</h1>                                       
+<h4>Web designing courses</h4>
+<p>Learn these before to backend technologies</p>
+<div class="btn-group" role="group" aria-label="web designing grouping button">
+  <button type="button" class="btn btn-primary">HTML5</button>
+  <button type="button" class="btn btn-primary">CSS3</button>
+<div class="btn-group" role="group">
+  <button id="btnGroupDrop1" type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+    JAVASCRIPT
+  </button>
+  <ul class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+    <li><a class="dropdown-item" href="#">Basic</a></li>
+    <li><a class="dropdown-item" href="#">Intermediate</a></li>
+    <li><a class="dropdown-item" href="#">Expert</a></li>
+  </ul>
+</div>
+</div><hr>
+</div>
+<!--                                                            CARDS    
+
+                   Bootstrap’s cards provide a flexible and extensible content container with multiple variants and options    -->
+
+<div class="container">
+  <h1 class="text-center bg-secondary img-thumbnail">CARDS</h1> 
+  <div class="row">
+    <div class="col-12 col-md-4">
+  <div class="card mb-4" style="width:18rem ;">
+    <img src="https://cyberdudenetworks.com/assets/img/training/courses/learn-html-essentials-in-tamil.jpg" alt="HTML5" class="card-img-top">
+    <div class="card-body">
+      <h5>HTML5-LEARNING</h4> 
+        <span class="badge bg-success mb-2">WEB DEVELOPMENT</span>
+        <span class="badge bg-primary mb-2">HTML5</span>
+        <p class="card-text">Learn html5 and bulid powerful interactive website in minutes.Enroll this coures to learn everything from scratch for free!</p>
+        <a href="#" class="btn btn-primary d-grid gap-2">ENROLL NOW</a>
+    </div>
+    <div class="card-footer">
+<small class="text-muted">Last updated on : May 2022</small>
+    </div>
+  </div>
+</div>   
+    <div class="col-12 col-md-4">
+  <div class="card mb-4" style="width:18rem ;">
+    <img src="https://cyberdudenetworks.com/assets/img/training/courses/learn-css3-in-tamil.jpg" alt="CSS3" class="card-img-top">
+    <div class="card-body">
+      <h5>CSS3-LEARNING</h4> 
+        <span class="badge bg-success mb-2">WEB DEVELOPMENT</span>
+        <span class="badge bg-primary mb-2">CSS3</span>
+        <p class="card-text">Learn css3 and bulid powerful interactive website in minutes.Enroll this coures to learn everything from scratch for free!</p>
+        <a href="#" class="btn btn-primary d-grid gap-2">ENROLL NOW</a>
+    </div>
+    <div class="card-footer">
+<small class="text-muted">Last updated on : june 2022 </small>
+    </div>
+  </div>
+</div> 
+    <div class="col-12 col-md-4">
+  <div class="card mb-4" style="width:18rem ;">
+    <img src="https://cyberdudenetworks.com/assets/img/training/courses/learn-javascript-in-tamil.jpg" alt="JAVASCRIPT" class="card-img-top">
+    <div class="card-body">
+      <h5>JAVASCRIPT-LEARNING</h4> 
+        <span class="badge bg-success mb-2">WEB DEVELOPMENT</span>
+        <span class="badge bg-primary mb-2">JAVASCRIPT</span>
+        <p class="card-text">Learn javascript and bulid powerful interactive website in minutes.Enroll this coures to learn everything from scratch for free!</p>
+        <a href="#" class="btn btn-primary d-grid gap-2">ENROLL NOW</a>
+    </div>
+    <div class="card-footer">
+<small class="text-muted">Last updated on : july 2022 </small>
+    </div>
+  </div>
+</div> 
+</div>
+</div>
+</div>
+     <!--                                          HORIZONTAL CARDS
+            -->    
+            <div class="container mb-5">
+              <h1 class="text-center bg-secondary img-thumbnail"> HORIZONTAL CARDS</h1> 
+              <div class="card">
+                <div class="row no-gutters">
+                  <div class="col-md-4">
+                    <img src="https://labs.tadigital.com/wp-content/uploads/2020/03/MicrosoftTeams-image.png"  class="card-img-top h-100"alt="BOOTSTRAP">
+                  </div>
+                  <div class="col-md-8">
+                    <div class="card-body">
+                    <h5>BOOTSTRAP LEARNING <span class="badge bg-info rounded-pill">NEW</span> </h5>
+                    <span class="badge bg-success mb-2">WEB DEVELOPMENT</span>
+                    <span class="badge bg-primary mb-2">BOOTSTRAP</span>
+                    <p class="card-text">Learn bootstrap and bulid powerful interactive website in minutes.Enroll this coures to learn everything from scratch for free!</p>
+                    <p class="text-muted">Last updated 3 min ago!</p>
+                    <a href="#" class="btn btn-primary d-grid gap-2">ENROLL NOW</a>
+                  </div>
+                </div>
+                </div>
+              </div>
+            </div> 
+            </div> 
+            <!--                                              LIST GROUPS 
+
+                            List groups are a flexible and powerful component for displaying a series of content. 
+                            Modify and extend them to support just about any content within.
+                                                              1..list-group-item
+                                          Add .active to a .list-group-item to indicate the current active selection.
+                                                              2..list-group-flush
+               Add .list-group-flush to remove some borders and rounded corners to render list group items edge-to-edge in a parent container (e.g., cards).  -->  
+        <div class="container mb-5">
+          <h1 class="text-center bg-secondary img-thumbnail">LIST GROUPS</h1> 
+          <div class="row">
+            <div class="col-md-3 ">
+              <!-- LIST -->
+<ul class="list-group list-group-flush">
+<li class="list-group-item bg-primary text-white text-center">CATEGORIES</li>
+<li class="list-group-item list-group-item-info d-flex justify-content-between align-items-center">HTML5
+  <span class="badge bg-info rounded-pill">14</span>
+</li>
+<li class="list-group-item list-group-item-secondary d-flex justify-content-between align-items-center">CSS3
+  <span class="badge bg-secondary rounded-pill">5</span>
+</li>
+<li class="list-group-item list-group-item-warning d-flex justify-content-between align-items-center">JAVASCRIPT
+  <span class="badge bg-warning rounded-pill">2</span>
+</li>
+<li class="list-group-item list-group-item-dark d-flex justify-content-between align-items-center">BOOTSTRAP
+  <span class="badge bg-dark rounded-pill">7</span>
+</li>
+</ul>
+            </div>
+            <div class="col-md-9">
+              <div class="row no-gutters">
+                <div class="col-md-4">
+                  <img src="https://labs.tadigital.com/wp-content/uploads/2020/03/MicrosoftTeams-image.png"  class="card-img-top h-100"alt="BOOTSTRAP">
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body">
+                  <h5>BOOTSTRAP LEARNING <span class="badge bg-info rounded-pill">NEW</span> </h5>
+                  <span class="badge bg-success mb-2">WEB DEVELOPMENT</span>
+                  <span class="badge bg-primary mb-2">BOOTSTRAP</span>
+                  <p class="card-text">Learn bootstrap and bulid powerful interactive website in minutes.Enroll this coures to learn everything from scratch for free!</p>
+                  <p class="text-muted">Last updated 3 min ago!</p>
+                  <a href="#" class="btn btn-primary d-grid gap-2">ENROLL NOW</a>
+                </div>
+              </div>
+              </div>
+            </div>
+          </div>
+        </div>   
+        </div>
+        <!--                                                  CAROUSEL  
+
+                      A slideshow component for cycling through elements—images or slides of text—like a carousel.    
+                                                    1..carousel slide
+                                                    2..carousel-inner
+                                                    3.carousel-item 
+                                                    4.carousel-fade   -->  
+       <h1 class="text-center bg-secondary img-thumbnail">CAROUSEL</h1>     
+       <div id="myCarousel" class="carousel slide carousel-fade"  data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="./images/sm1.jpg" class="d-block w-100" alt="socialmedia1">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>First slide label</h5>
+              <p>Some representative placeholder content for the first slide.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="./images/sm2.jpg" class="d-block w-100" alt="socialmedia2">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Second slide label</h5>
+              <p>Some representative placeholder content for the second slide.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="./images/sm3.jpg" class="d-block w-100" alt="socialmedia3">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+       </div><br>
+       <!--                                                             COLLAPSE      
+
+                           Toggle the visibility of content across your project with a few classes and our JavaScript plugins. 
+                                                             1..collapse hides content -->
+     <div class="container mb-5">
+      <h1 class="text-center bg-secondary img-thumbnail">COLLAPSE</h1> 
+      <h4>Download links are below</h4>
+      <p>Choose the download links based on your regin.</p>
+      <p>
+        <a href="#collapseExample" class="btn btn-primary" data-bs-toggle="collapse" rule="button" aria-expanded="false" aria-controls="collapseExample">SERVER #1</a>
+        <BUtton class="btn btn-primary" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">SERVER #2</BUtton>
+      </p>
+      <div class="collapse" id="collapseExample">
+      <div class="card-body">
+        https://google.com
+      </div>
+      </div>
+     </div>   
+     <!--                                                                ACCORDION
+
+                              Build vertically collapsing accordions in combination with our Collapse JavaScript plugin.      
+                                                                    1..accordion.
+                                        The accordion uses collapse internally to make it collapsible. 
+                                 To render an accordion that’s expanded, add the .open class on the .accordion.     -->   
+    <div class="container mb-5 accordion" id="accordion">
+      <h1 class="text-center bg-secondary img-thumbnail">ACCORDION</h1> 
+      <h4>Frequently Asked Questions</h4>
+      <p>Have a doubt? Checkout our Frequently Asked Questions</p>
+      <div class="card">
+        <div class="card-header">
+          <a href="#collapseOne" data-bs-toggle="collapse" class="card-link">In this couse free?</a>
+        </div>
+        <div id="collapseOne" class="collapse" data-bs-parent="#accordion">
+          <div class="card-body">
+            Yes,ofcouse! Everything is FREE!
+          </div>
+        </div>
+        <div class="card-header">
+          <a href="#QuestionTwo" data-bs-toggle="collapse" class="card-link">How can i contact you?</a>
+        </div>
+        <div id="QuestionTwo" class="collapse" data-bs-parent="#accordion">
+          <div class="card-body">
+            Through Email!
+          </div>
+        </div>
+        <div class="card-header">
+          <a href="#QuestionThree" data-bs-toggle="collapse" class="card-link">Do you have my any app for this?</a>
+        </div>
+        <div id="QuestionThree" class="collapse" data-bs-parent="#accordion">
+          <div class="card-body">
+            Yes,We are on process of building one!
+          </div>
+        </div>
+      </div>
+    </div> 
+    <!--                                                        DROPDOWNS
+
+                    Toggle contextual overlays for displaying lists of links and more with the Bootstrap dropdown plugin.
+                    You can use <a> or <button> elements as dropdown items. -->   
+    <div class="container mb-5">
+      <h1 class="text-center bg-secondary img-thumbnail">DROPDOWNS</h1> 
+      <div class="row">
+      <div class="col-6">
+        <button class="btn btn-primary"><i class="bi bi-arrow-right-circle-fill "></i> Getting Started!</button>
+        <button class="btn btn-outline-success">Total videos: <span class="badge text-bg-success"> 50 </span></button>
+      </div>
+      <div class="col-6">
+        <button class="btn btn-info dropdown-toggle" data-bs-toggle="dropdown" type="button" id="contactUs" aria-haspopup="true" aria-expanded="false">CONTACT US</button>
+        <div class="dropdown-menu" aria-labelledby="contactUs">
+          <a class="dropdown-item" href="#"><i class="bi bi-facebook text-primary"></i> FACEBOOK</a>
+          <a class="dropdown-item" href="#"><i class="bi bi-whatsapp text-success"></i> WHATSAPP</a>
+          <a class="dropdown-item" href="#"><i class="bi bi-instagram text-danger"></i> INSTAGRAM</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="#"><i class="bi bi-snapchat text-warning"></i> SNAPCHAT</a>
+        </div>
+      </div>
+    </div>                 
+    </div>   
+    <!--                                                      FORMS
+
+                               Examples and usage guidelines for form control styles, layout options, 
+                               and custom components for creating a wide variety of forms.
+                                                        1..form-controls
+          Give textual form controls like <input>s and <textarea>s an upgrade with custom styles, sizing, focus states, and more.
+
+-->
+    <div class="container mb-5">
+      <h1 class="text-center bg-secondary img-thumbnail">FORMS</h1>
+    <div class="row">
+      <div class="col-sm-8">
+        <iframe class="w-100 h-100" id="gmap_canvas" src="https://maps.google.com/maps?q=virudhunagar&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+      </div>
+      <div class="col-sm-4">
+        <div class="card">
+        <div class="card-header text-center">CONTACT US</div>
+        <div class="card-body">
+      <form action="" method="post">
+        <div class="mb-3">
+        <label for="name" class="form-label">FULL NAME <span class="text-warning">*</span></label>
+        <input type="text" class="form-control" id="name" name="name" placeholder="Enter Your Full Name">
+        </div>
+        <div class="mb-3">
+          <label for="gender">GENDER:</label>
+          <div class="me-2 form-check form-check-inline">
+            <input
+              class="form-check-input"
+              type="radio"
+              name="gender"
+              value="Male"
+              id="gender"
+              required
+            />
+            <label class="form-check-label" for="gender">Male</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input
+              class="form-check-input"
+              type="radio"
+              name="gender"
+              id="female"
+              value="Female"
+            />
+            <label class="form-check-label" for="female">Female</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input
+              class="form-check-input"
+              type="radio"
+              name="gender"
+              id="others"
+              value="Others"
+            />
+            <label class="form-check-label" for="others">Others</label>
+          </div>
+        </div>
+        <div class="mb-3">
+        <label for="phone" class="form-label">MOBILE NO <span class="text-muted">(optional)</span></label>
+        <input type="number" class="form-control" id="name"  placeholder="+919080651949">
+        </div>
+        <div class="mb-3">
+        <label for="email" class="form-label">Email <span class="text-warning">*</span></label>
+        <input type="email" class="form-control" id="email" name="email" placeholder="you@gmail.com" aria-describedby="emailhelp" required>
+        <small id="emailhelp">We'll never share your email with anyone else.</small>
+        </div>
+        <div class="mb-3">
+          <label for="source" class="form-label">Came From</label>
+          <select name="source" id="source" class="form-control">
+            <option value="">--Select Source</option>
+            <option value="google">GOOGLE</option>
+            <option value="facebook">FACEBOOK</option>
+            <option value="youtube">YOUTUBE</option>
+          </select>
+          </div>
+          <div class="mb-3">
+            <label for="messages" class="form-label">MESSAGE</label>
+            <textarea  class="form-control"  rows="3" id="messages" name="messages" placeholder="Some Text Here..!">
+            </textarea>
+            </div>
+            <div class="mb-3">
+              <div class="from-check text-center">
+                <input type="chechbox" name="agreement" id="agreement"  class="form-check-input">
+                <label for="agreement" class="form-check-label">I agree to terms and connditions</label>
+              </div>
+            </div>
+        <div class="mb-3">
+          <div class="d-grid gap-2">
+          <button class="btn btn-primary " type="submit">SUBMIT</button>
+        </div>
+        </div>
+      </form>
+      </div>
+      </div>
+      </div>
+    </div>    
+    </div>  
+    <div class="container">
+      <h1 class="text-center bg-secondary img-thumbnail">RIGISTER FORMS</h1>
+      <div class="card">
+        <div class="card-body">
+      <form action="/" method="post">
+        <div class="mb-3">
+          <label for="name" class="form-label">FULL NAME <span class="text-warning">*</span></label>
+          <input type="text" class="form-control" id="name" name="name" placeholder="Enter Your Full Name" required>
+          </div>
+          <div class="row">
+          <div class="col-sm-6">
+            <div class="mb-3">
+              <label for="phone" class="form-label">MOBILE NO <span class="text-muted">(optional)</span></label>
+              <input type="number" class="form-control" id="name"  placeholder="+919080651949">
+              </div> 
+              </div>
+              <div class="col-sm-6">
+              <div class="mb-3">
+                <label for="email" class="form-label">Email <span class="text-warning">*</span></label>
+                <input type="email" class="form-control" id="email" name="email" placeholder="you@gmail.com" aria-describedby="emailhelp">
+                <small id="emailhelp">We'll never share your email with anyone else.</small>
+                </div>  
+                </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-6">
+              <div class="mb-3">
+              <label for="password" class="from-label">PASSWORD</label>
+              <input type="password" name="password" id="password" placeholder="*****" class="form-control">
+            </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="mb-3">
+              <label for="conform_password" class="from-label">CONFORM PASSWORD</label>
+              <input type="conform_password" name="conform_password" id="conform_password" placeholder="*****" class="form-control">
+            </div>
+            </div>
+          </div>
+          <div class="mb-3">
+            <div class="from-check text-center">
+              <input type="chechbox"  id="agreement"  class="form-check-input">
+              <label for="agreement" class="form-check-label">I agree to terms and connditions</label>
+            </div>
+          </div>
+          <div class="mb-3 text-center">
+            <button class="btn btn-primary " type="reset">RESET</button>
+            <button class="btn btn-success " type="submit"><i class="bi bi-save"></i> REGISTER</button>
+          </div>
+      </form> 
+    </div>
+    </div>               
+    </div><div class="container my-5">                                     
+    <h1 class="text-center bg-secondary img-thumbnail">HORIZONTAL FORMS</h1>
+    <div class="row">
+      <div class="col-sm-6 mx-auto">
+        <div class="card">
+          <div class="card-body">
+            <form action="/" method="post">
+              <div class="mb-3 row">
+                <label for="email" class="form-label col-sm-4 ">Email 
+                <span class="text-warning">*</span>
+                </label>
+                <div class="col-sm-8">
+                <input type="email" class="form-control" id="email" name="email" placeholder="you@gmail.com" aria-describedby="emailhelp" required>
+                <small id="emailhelp">We'll never share your email with anyone else.</small>
+                </div>
+                </div>
+                <div class="mb-3 row">
+                  <label for="password" class="from-label col-sm-4">PASSWORD</label>
+                  <div class="col-sm-8">
+                  <input type="password" name="password" id="password" placeholder="*****" class="form-control">
+                </div>
+                </div>
+                <div class="mb-3">
+                  <div class="from-check ">
+                    <input type="chechbox"  id="agreement"  class="form-check-input">
+                    <label for="agreement" class="form-check-label">I agree to terms and connditions</label>
+                  </div>
+                </div>
+                <div class="mb-3 row">
+                  <div class="col-sm-4"></div>
+                  <div class="d-grid gap-2 col-md-8">
+                  <button class="btn btn-success" type="submit"> <i class="bi bi-lock-fill"></i> SUBMIT</button>
+                </div>
+                </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+    <!--                                                           INPUT GROUP
+
+                Easily extend form controls by adding text, buttons, or button groups on either side of textual inputs, custom selects, 
+                and custom file inputs-->
+    <div class="container my-5">
+    <h1 class="text-center bg-secondary img-thumbnail">INPUT GROUPS</h1>
+      <div class="row">
+        <div class="col-sm-4 mx-auto">
+          <div class="card">
+            <div class="card-body">
+              <form action="/" method="post">
+                <div class="mb-3">
+                  <label for="email" class="form-label">Email <span class="text-warning">*</span></label>
+                  <div class="input-group">
+                    <div class="input-group-prepend">
+                      <span class="input-group-text">@</span>
+                    </div>
+                    <input type="email" class="form-control" id="email" name="email" placeholder="you@gmail.com" aria-describedby="emailhelp" required>
+                  </div>
+                  <small id="emailhelp">We'll never share your email with anyone else.</small>
+                  </div>
+                  <div class="mb-3">
+                    <label for="password" class="from-label">PASSWORD</label>
+                    <div class="input-group">
+                      <div class="input-group-prepend">
+                        <span class="input-group-text"><i class="bi bi-key"></i></span>
+                      </div>
+                      <input type="password" name="password" id="password" placeholder="*****" class="form-control">
+                    </div>
+                  </div>
+                  <div class="mb-3">
+                    <div class="d-grid gap-2">
+                    <button class="btn btn-primary " type="submit"><i class="bi bi-lock-fill"></i> SUBMIT</button>
+                  </div>
+                  </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--                                                             FORM VALIDATION
+
+                                  Provide valuable, actionable feedback to your users with HTML5 form validation, 
+                                  via browser default behaviors or custom styles and JavaScript.
+                                  
+                                  HTML form validation is applied via CSS’s two pseudo-classes, :invalid and :valid. It applies to <input>, <select>, and <textarea> elements
+                                    
+                                  As a fallback, .is-invalid and .is-valid classes may be used instead of the pseudo-classes for server-side validation. They do not require a .was-validated parent class.  -->
+
+    <div class="container my-5">
+    <h1 class="text-center bg-secondary img-thumbnail">FORM VALIDATION</h1>
+      <div class="row">
+        <div class="col-sm-4 mx-auto">
+          <div class="card">
+            <div class="card-body">
+              <form action="/" method="post" class="needs-validation" novalidate>
+                <div class="mb-3">
+                  <label for="email" class="form-label">Email <span class="text-warning">*</span></label>
+                  <div class="input-group">
+                    <div class="input-group-prepend">
+                      <span class="input-group-text">@</span>
+                    </div>
+                    <input type="email" class="form-control" id="email" name="email" placeholder="you@gmail.com" aria-describedby="emailhelp" required>
+                    <div class="valid-feedback">
+                      Looks good!
+                    </div>
+                    <div class="invalid-feedback">
+                      Please choose a Email.
+                    </div>
+                  </div>
+                  <small id="emailhelp">We'll never share your email with anyone else.</small>
+                  </div>
+                  <div class="mb-3">
+                    <label for="password" class="from-label">PASSWORD</label>
+                    <div class="input-group">
+                      <div class="input-group-prepend">
+                        <span class="input-group-text"><i class="bi bi-key"></i></span>
+                      </div>
+                      <input type="password" name="password" id="password" placeholder="*****" class="form-control" required>
+                      <div class="valid-feedback">
+                        Looks good!
+                      </div>
+                      <div class="invalid-feedback">
+                        Please choose a password.
+                      </div>
+                    </div>
+                  </div>
+                  <div class="mb-3">
+                    <div class="d-grid gap-2">
+                    <button class="btn btn-info" type="submit"><i class="bi bi-lock-fill"></i> SUBMIT</button>
+                  </div>
+                  </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div> 
+    <!--                                                   PAGINATION
+      
+           Documentation and examples for showing pagination to indicate a series of related content exists across multiple pages.                                         1..pagination            --> 
+
+<h1 class="text-center bg-secondary img-thumbnail">PAGINATION</h1>
+<nav class="mt-5">
+  <ul class="pagination justify-content-center ">
+    <li class="page-item"> <a class="page-link" href="#"> PREVIOUS</a></li>
+    <li class="page-item active"> <a class="page-link" href="#"> 1</a></li>
+    <li class="page-item"> <a class="page-link" href="#"> 2</a></li>
+    <li class="page-item"> <a class="page-link" href="#"> 3</a></li>
+    <li class="page-item"> <a class="page-link" href="#"> 4</a></li>
+    <li class="page-item"> <a class="page-link" href="#"> 5</a></li>
+    <li class="page-item"> <a class="page-link" href="#"> NEXT</a></li>
+  </ul>
+</nav>
+<!--                                                       POPOVERS
+
+             Documentation and examples for adding Bootstrap popovers, like those found in iOS, to any element on your site.-->
+
+<h1 class="text-center bg-secondary img-thumbnail">POPOVERS</h1>
+<div class="container mb-5 text-center">
+ <button class="btn btn-primary" type="button" data-bs-toggle="popover" title="WELCOME" data-bs-content="Start the course enjoy well." data-bs-placement="left"><i class="bi bi-arrow-right-circle-fill "></i> Getting Started!</button>
+<button class="btn btn-outline-success" type="button" data-bs-toggle="popover" title="TOTAL VIDEOS" data-bs-content="You can't see 50 videos only" data-bs-placement="top">Total videos: <span class="badge text-bg-success"> 50 </span></button>
+<button class="btn btn-warning" type="button" data-bs-toggle="popover" title="WELCOME OFFER!ENJOY...!" data-bs-content="Grap these coupon codes for next three transactions" data-bs-trigger="focus">WELCOME OFFER!</button>
+</div>
+<!--                                                        TOOLTIPS
+
+   Documentation and examples for adding custom Bootstrap tooltips with CSS and JavaScript using CSS3 for animations and data-bs-attributes for local title storage     -->
+
+   <div class="container mb-5 text-center">
+   <h1 class="text-center bg-secondary img-thumbnail">TOOLTIPS</h1>
+   <button class="btn btn-warning" type="button" data-bs-toggle="tooltip" title="PRIMIUM USER ONLY" data-bs-placement="top">WELCOME OFFER!ENJOY...!</button>
+   <button class="btn btn-warning " type="button" data-bs-toggle="tooltip" title="For only subscribers" data-bs-placement="right">GET ALL CORUSES FREE!</button>
+</div>
+<!--                                                          PROGRESS BAR
+
+                    Documentation and examples for using Bootstrap custom progress bars featuring support for stacked bars, 
+                    animated backgrounds, and text labels.
+                                                       1..progress
+                                                       2.progress-bar 
+                                                       3..progress-bar-striped 
+                                                       4..progress-bar-animated  -->
+
+    <div class="container mb-5">
+    <h1 class="text-center bg-secondary img-thumbnail">PROPRESS</h1>
+    <div class="card">
+    <div class="card-body">
+    <div class="progress" style="height: 20px;">
+    <div class="progress-bar w-50 bg-success" aria-valuenow="50%" aria-valuemin="0%" aria-valuemax="100%">
+      UPDLOADING DATA 50%
+    </div>
+    </div>
+    <div class="progress mt-3" style="height: 20px;">
+      <div class="progress-bar w-25 bg-info" aria-valuenow="40%" aria-valuemin="0%" aria-valuemax="100%">
+        PHOTOS
+      </div>
+      <div class="progress-bar w-25 bg-danger " aria-valuenow="28%" aria-valuemin="0%" aria-valuemax="100%">
+        VIDEOS
+      </div>
+      <div class="progress-bar w-25 bg-warning" aria-valuenow="35%" aria-valuemin="0%" aria-valuemax="100%">
+        OTHERS
+      </div>
+      </div>
+      <div class="progress mt-3" style="height: 20px;">
+        <div class="progress-bar w-50 bg-primary progress-bar-striped progress-bar-animated" aria-valuenow="50%" aria-valuemin="0%" aria-valuemax="100%">
+          UPDLOADING DATA 50%
+        </div>
+        </div>
+    </div>
+    </div>
+    </div>  
+    <!--                                                  SPINNERS
+
+                      Indicate the loading state of a component or page with Bootstrap spinners, 
+                      built entirely with HTML, CSS, and no JavaScript.
+                                                       1..spinner-border
+                                                       2..spinner-grow    -->    
+
+    <div class="container mb-5">
+      <h1 class="text-center bg-secondary img-thumbnail">SPINNERS</h1>
+      <div class="card">
+        <div class="card-body">
+         <div class="spinner-border text-warning" role="status">
+          <span class="visually-hidden">loading...</span>
+         </div>
+         <div class="spinner-border text-info" role="status">
+          <span class="visually-hidden">loading...</span>
+         </div>
+         <div class="spinner-border text-success" role="status">
+          <span class="visually-hidden">loading...</span>
+         </div>
+         <div class="spinner-grow text-warning" role="status">
+          <span class="visually-hidden">loading...</span>
+         </div>
+         <div class="spinner-grow text-info" role="status">
+          <span class="visually-hidden">loading...</span>
+         </div>
+         <div class="spinner-grow text-success" role="status">
+          <span class="visually-hidden">loading...</span>
+         </div>
+         <div class="row mt-3">
+          <div class="col-sm-4">
+         <button class="btn btn-primary " type="submit"><div class="spinner-border spinner-border-sm me-2"></div>LOADING...</button>
+        </div>
+      </div>
+      </div>
+      </div>
+    </div>  
+    <!--                                                        MODALS
+
+              Use Bootstrap’s JavaScript modal plugin to add dialogs to your site for lightboxes, user notifications, or completely custom content. 
+
+              Included are the (modal header), (modal body) (required for padding), and (modal footer) (optional). We ask that you include modal headers with dismiss actions whenever possible, or provide another explicit dismiss action.
+                              
+              Toggle a working modal demo by clicking the button below. It will slide down and (fade) in from the top of the page.  
+                                
+              When (backdrop) is set to (static), the modal will not close when clicking outside of it. Click the button below to try it.
+                                 
+              You can also create a scrollable modal that allows scroll the modal body by adding (.modal-dialog-scrollable) to .modal-dialog.
+            
+              Add (.modal-dialog-centered) to .modal-dialog to vertically center the modal.    -->  
+                            
+                                
+      <div class="container">
+      <h1 class="text-center bg-secondary img-thumbnail">MODALS</h1>
+      <div class="card">
+        <div class="card-body">
+      <form action="/" method="post">
+        <div class="mb-3">
+          <label for="name" class="form-label">FULL NAME <span class="text-warning">*</span></label>
+          <input type="text" class="form-control" id="name" name="name" placeholder="Enter Your Full Name" required>
+          </div>
+          <div class="row">
+          <div class="col-sm-6">
+            <div class="mb-3">
+              <label for="phone" class="form-label">MOBILE NO <span class="text-muted">(optional)</span></label>
+              <input type="number" class="form-control" id="name"  placeholder="+919080651949">
+              </div> 
+              </div>
+              <div class="col-sm-6">
+              <div class="mb-3">
+                <label for="email" class="form-label">Email <span class="text-warning">*</span></label>
+                <input type="email" class="form-control" id="email" name="email" placeholder="you@gmail.com" aria-describedby="emailhelp">
+                <small id="emailhelp">We'll never share your email with anyone else.</small>
+                </div>  
+                </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-6">
+              <div class="mb-3">
+              <label for="password" class="from-label">PASSWORD</label>
+              <input type="password" name="password" id="password" placeholder="*****" class="form-control">
+            </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="mb-3">
+              <label for="conform_password" class="from-label">CONFORM PASSWORD</label>
+              <input type="conform_password" name="conform_password" id="conform_password" placeholder="*****" class="form-control">
+            </div>
+            </div>
+          </div>
+          <div class="mb-3">
+            <div class="from-check text-center">
+              <input type="chechbox"  id="agreement"  class="form-check-input">
+              <label for="agreement" class="form-check-label">I agree to <a href="#" data-bs-toggle="modal" data-bs-target="#showTerm">terms and connditions</a></label>
+            </div>
+          </div>
+          <div class="mb-3 text-center">
+            <button class="btn btn-primary " type="reset">RESET</button>
+            <button class="btn btn-success " type="submit"><i class="bi bi-save"></i> REGISTER</button>
+          </div>
+      </form> 
+    </div>
+    </div>                              
+     <div class="modal fade" id="showTerm" aria-labelledby="showTerm" aria-hidden="true" tabindex="1" data-bs-backdrop="static" data-bs-keyboard="false">
+      <div class="modal-dialog .modal-dialog-centered modal-dialog-scrollable">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">TERMS AND CONDITIONS</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+          <div class="modal-body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid accusantium delectus sed ipsum beatae illum nobis dolorum excepturi nulla. Aliquam iure amet ducimus totam soluta voluptatem natus a! Corrupti, itaque.
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit earum reprehenderit laudantium vel libero nam eius repellendus, quasi debitis excepturi quaerat asperiores dolorum fugiat culpa ad et dicta facilis iste!
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur ipsam porro ullam quasi numquam aliquam sunt non, iste sequi consequuntur incidunt sed. Voluptatum maxime corporis quam. Recusandae sapiente pariatur autem.
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eveniet iste inventore reprehenderit optio dolor quasi harum possimus nesciunt perspiciatis numquam amet accusantium unde labore, animi eum nihil, nostrum saepe fuga?
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magni dignissimos blanditiis placeat et consequuntur quibusdam ducimus aliquam debitis eaque. Optio dolorum reiciendis id voluptas! Dignissimos omnis molestias dolores fuga unde.
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nulla voluptates asperiores dignissimos magni, autem quibusdam dolorem voluptas nemo in. Nesciunt, provident! Ad, voluptatibus earum asperiores dolores nisi sapiente eum ab!
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam suscipit, commodi neque magni perferendis eos natus deleniti enim, quis laboriosam soluta, dolores molestiae dignissimos aspernatur iste maiores esse. Dolor, excepturi?
+          </div>
+          <div class="modal-footer">
+            <button class="btn btn-primary" data-bs-dismiss="modal">CLOSE</button>
+          </div>
+        </div>
+      </div>
+     </div>
+     <br>    
+     <!--                                                              NAVS & TABS 
+      
+                           Documentation and examples for how to use Bootstrap’s included navigation components.   -->
+
+    <div class="container mb-5">
+      <h1 class="text-center bg-secondary img-thumbnail">NAVS $ TABS</h1>
+      <div class="card">
+        <div class="card-body">
+          <ol class="nav nav-pills nav-tabs nav-justified">
+            <li class="nav-item">
+              <a href="#nav-html" id="html" data-bs-toggle="tab" role="tab" class="nav-link active">HTML5</a>
+            </li>
+            <li class="nav-item">
+              <a href="#nav-css" id="css" data-bs-toggle="tab" role="tab"  class="nav-link">CSS3</a>
+            </li>
+            <li class="nav-item ">
+              <a href="#nav-js" id="js" data-bs-toggle="tab" role="tab"  class="nav-link ">JAVASCRIPT</a>
+            </li>
+            <li class="nav-item">
+              <a href="#nav-bs" id="bs" data-bs-toggle="tab" role="tab"  class="nav-link">BOOTSTARAP</a>
+            </li>
+          </ol>
+          <div class="tab-content">
+            <div class="tab-pane show active fade" id="nav-html">
+            <div class="m-3">
+              <p>HTML5 is a markup language used for structuring and presenting content on the World Wide Web. It is the fifth and final major HTML version that is a World Wide Web Consortium recommendation. The current specification is known as the HTML Living Standard</p>
+            </div>
+            </div>
+            <div class="tab-pane fade" id="nav-css">
+              <div class="m-3">
+                <p>Cascading Style Sheets is a style sheet language used for describing the presentation of a document written in a markup language such as HTML. CSS is a cornerstone technology of the World Wide Web, alongside HTML and JavaScript.</p>
+              </div>
+              </div>
+              <div class="tab-pane fade" id="nav-js">
+                <div class="m-3">
+                  <p>JavaScript, often abbreviated JS, is a programming language that is one of the core technologies of the World Wide Web, alongside HTML and CSS. Over 97% of websites use JavaScript on the client side for web page behavior, often incorporating third-party libraries</p>
+                </div>
+                </div>
+                <div class="tab-pane fade" id="nav-bs">
+                  <div class="m-3">
+                    <p>Bootstrap is a free and open-source CSS framework directed at responsive, mobile-first front-end web development. It contains HTML, CSS and JavaScript-based design templates for typography, forms, buttons, navigation, and other interface components.</p>
+                  </div>
+                  </div>
+          </div>
+        </div>
+      </div>
+    </div> 
+    <!--                                                                  TOASTS
+
+                           Push notifications to your visitors with a toast, a lightweight and easily customizable alert message.  --> 
+     <div class="container mb-5">                        
+    <h1 class="text-center bg-secondary img-thumbnail">TOASTS</h1>   
+    <div class="card">    
+      <div class="card-body"> 
+        <h4>TOASTS </h4>
+        <button id="toastBtn" class="btn btn-success">SHOW TOASTS</button>            
+    <div id="toastElement" class="toast position-fixed bottom-0 end-0 bg-warning p-lg-4" role="alert" aria-live="assertive" aria-atomic="true">
+      <div class="toast-header">
+        <img src="https://www.drupal.org/files/project-images/bootstrap-stack.png" class="rounded me-2" width="28" alt="bootstrap logo">
+        <strong class="me-auto">BOOTSTARAP LEARNING</strong>
+        <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+      </div>
+      <div class="toast-body">
+        Hello! you have been logged in!
+      </div>
+    </div>  
+    </div>
+    </div>
+    </div>                     
+    <!--                                                             HELPER CLASS  -->    
+
+    <div class="container mb-3">
+    <h1 class="text-center bg-secondary img-thumbnail">HELPERS</h1>
+    <div class="card">
+      <div class="card-header text-center">
+        CLEARFIX
+      </div>
+    <div class="card-body">
+    <div class="clearfix">
+      <button class="btn btn-primary float-start" type="submit">SUBMIT</button>
+      <button class="btn btn-danger float-end" type="reset">RESET</button>
+      </div>
+      <p >Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perferendis quo in excepturi non temporibus consectetur recusandae amet aspernatur fuga? Expedita quasi culpa atque fugiat corporis magni iusto? Reprehenderit, expedita similique?</p>
+    </div>
+    </div>
+    <div class="card">
+      <div class="card-header text-center">
+        RATIO
+      </div>
+    <div class="card-body">
+      <div class="ratio ratio-21x9">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/Au63DyjBQ7k" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+      </div>
+      </div>
+      <div class="card">
+        <div class="card-header text-center">
+          TEXT TRUNCATION
+        </div>
+      <div class="card-body">
+        <div class="col-2 text-truncate">
+    This text is quite long, and will be truncated once displayed.
+  </div>
+    </div> 
+    </div>
+    </div>
+    <!--                                                        UTILITIES CLASS   
+
+                                                Utilities classes read to bootstrap.com.
+                                                Many CSS property is used to bootstrap. -->  
+
+    <script src="./assets/js/jquery.mim.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js" integrity="sha512-2rNj2KJ+D8s1ceNasTIex6z4HWyOnEYLVC3FigGOmyQCZc2eBXKgOxQmo3oKLHyfcj53uz4QMsRCWNbLd32Q1g==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    </script>
+    <script src="./assets/js/bootstrap.min.js"></script>
+
+    <script>
+      (() => {
+  'use strict'
+
+  // Fetch all the forms we want to apply custom Bootstrap validation styles to
+  const forms = document.querySelectorAll('.needs-validation')
+
+  // Loop over them and prevent submission
+  Array.from(forms).forEach(form => {
+    form.addEventListener('submit', event => {
+      if (!form.checkValidity()) {
+        event.preventDefault()
+        event.stopPropagation()
+      }
+
+      form.classList.add('was-validated')
+    }, false)
+  })
+})()
+    </script>
+    <script>
+      const popoverTriggerList = document.querySelectorAll('[data-bs-toggle="popover"]')
+      const popoverList = [...popoverTriggerList].map(popoverTriggerEl => new bootstrap.Popover(popoverTriggerEl))
+      const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
+const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
+    </script>
+    <script>
+      const toastTrigger = document.getElementById('toastBtn')
+      const toastElement = document.getElementById('toastElement')
+          if (toastTrigger) {
+      toastTrigger.addEventListener('click', () => {
+      const toast = new bootstrap.Toast(toastElement)
+
+    toast.show()
+  })
+}
+    </script>
+
+    <!--                                           Online Bootstrap JS Link
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>-->
+  </body>
+</html>
+ 
